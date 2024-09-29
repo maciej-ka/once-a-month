@@ -10,26 +10,25 @@ const data = {
 
 const Timesheet = () => {
   return (
-    <div className="grid grid-cols-5">
-      <div className="text-center">NAME:</div>
-      <div className="text-center">{data.name}</div>
+    <div className="grid grid-cols-5 text-center font-bold text-white border border-black">
+      <div className="bg-raspberry">NAME:</div>
+      <div className="bg-raspberry">{data.name}</div>
       <div className="col-span-3 row-span-7"><img alt="logo" src={logo}/></div>
-      <div className="text-center">PERIOD:</div>
-      <div className="text-center">{data.period.toUpperCase()}</div>
-      <div className="text-center">DATE:</div>
-      <div className="text-center">{data.date.format(({ years, months, days }) => `${days}/${months}/${years}`)}</div>
-      <div className="col-span-2" />
-      <div className="text-center">Number of HOURS TOTAL:</div>
-      <div>[Hours]</div>
-      <div className="text-center">Number of DAYS TOTAL:</div>
-      <div>[MD]</div>
-      <div className="col-span-2" />
-      <div>Date</div>
-      <div>Hours</div>
-      <div>Tasks</div>
-      <div>Task ID</div>
-      <div>Comments</div>
-      <button>test</button>
+      <div className="bg-raspberry">PERIOD:</div>
+      <div className="bg-raspberry">{data.period.toUpperCase()}</div>
+      <div className="bg-raspberry">DATE:</div>
+      <div className="bg-raspberry">{data.date.format(({ years, months, days }) => `${days}/${months}/${years}`)}</div>
+      <div className="col-span-2 h-6" />
+      <div className="bg-raspberry">Number of HOURS TOTAL:</div>
+      <div className="bg-raspberry text-left">[Hours]</div>
+      <div className="bg-raspberry">Number of DAYS TOTAL:</div>
+      <div className="bg-raspberry text-left">[MD]</div>
+      <div className="col-span-2 h-6" />
+      <div className="bg-blueberry border border-black">Date</div>
+      <div className="bg-blueberry border border-black">Hours</div>
+      <div className="bg-blueberry border border-black">Tasks</div>
+      <div className="bg-blueberry border border-black">Task ID</div>
+      <div className="bg-blueberry border border-black">Comments</div>
     </div>
   )
 }
