@@ -7,7 +7,7 @@ type Props = {
 const Day = ({ date }: Props) => {
   return (
     <>
-      <div className="bg-blueberry border border-black">{date.format(({years, months, days}) => `${days}/${months}/${years}`)}</div>
+      <div className="bg-blueberry border border-black">{date.format(({years, months, num}) => `${num.days}/${months}/${years}`)}</div>
       <div className="border border-black text-black font-normal"></div>
       <div className="border border-black text-black font-normal"></div>
       <div className="border border-black text-black font-normal"></div>

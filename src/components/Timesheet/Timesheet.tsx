@@ -10,7 +10,7 @@ type Props = {
 const Timesheet = ({ date }: Props) => {
   const monthStart = new PojoDate(date);
   const monthEnd = monthStart.add({ months: 1 }).set({ days: 0 });
-  const monthName = date.toLocaleString('default', { month: 'long' }).toUpperCase() + ' ' + monthEnd.years
+  const monthName = monthStart.format(({ long, years }) => `${long.month.toUpperCase()} ${years}`)
 
   const days: PojoDate[] = [];
   let current = monthStart;
