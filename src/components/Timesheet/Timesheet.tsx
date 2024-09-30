@@ -27,7 +27,7 @@ const Timesheet = ({ date }: Props) => {
     <div className="grid grid-cols-5 text-center font-bold text-white border border-black leading-snug">
       <div className="bg-raspberry">NAME:</div>
       <div className="bg-raspberry">{localStorageData.username}</div>
-      <div className="col-span-3 row-span-7"><img alt="logo" src={logo}/></div>
+      <div className="col-span-3 row-span-7"><img alt="logo" src={logo} className="m-auto pt-8 w-60"/></div>
       <div className="bg-raspberry">PERIOD:</div>
       <div className="bg-raspberry">{monthName}</div>
       <div className="bg-raspberry">DATE:</div>
